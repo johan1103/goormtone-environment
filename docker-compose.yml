@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web1:
+    image: johan1103/goorm:latest
+    ports:
+      - "80:8080"
+    container_name: api-server
