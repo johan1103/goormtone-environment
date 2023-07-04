@@ -6,7 +6,6 @@ services:
       - "80:8080"
     container_name: api-server
   nginx:
-    container_name: api-nginx
     image: nginx:1.22.1-alpine
     ports:
       - "80:80"
@@ -15,3 +14,4 @@ services:
       - /home/ubuntu/goorm/nginx/var/lib/letsencrypt:/var/lib/letsencrypt
       - /home/ubuntu/goorm/goormtone-environment/nginx/sites.conf:/etc/nginx/conf.d/sites.conf
       - /home/ubuntu/goorm/goormtone-environment/nginx/sites-enabled:/etc/nginx/sites-enabled
+    container_name: api-nginx
