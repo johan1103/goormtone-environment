@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo docker compose pull web1 -q
-sudo docker compose up --force-recreate -d web1
+sudo docker compose up --force-recreate -d
 #curl --silent --head --fail https://goormtone6th.com/swagger-ui/index.html >> /dev/null
 #while [ $? -ne 0 ];
 #do 
