@@ -7,6 +7,7 @@ services:
     image: nginx:1.22.1-alpine
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - /home/ubuntu/goorm/nginx/etc/letsencrypt:/etc/letsencrypt
       - /home/ubuntu/goorm/nginx/var/lib/letsencrypt:/var/lib/letsencrypt
